@@ -26,8 +26,10 @@ $ which iptables-rules-count
 ##Example Usage
 
 **Ex** : calculating the sum of active iptables rule-lines in Linux.
+```sh
 $ iptables-rules-count
 - Sum of active iptable rules : 1891 line
+```
 
 ##Author
 **Name** : Quach Chi Cuong
