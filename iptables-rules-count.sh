@@ -26,7 +26,7 @@ iptables -nvL -t security 2> /dev/null 1>> ${TMP_FILE}
 
 
 ## Count active iptables rule line ##
-NUM_IPT_CHAIN=$(cat ${TMP_FILE} | grep -Ev "Chain|pkts" | wc -l)
+NUM_IPT_RULE=$(cat ${TMP_FILE} | grep -Ev "Chain|pkts" | wc -l)
 
 ## Delete file temporary ##
 if [ -f ${TMP_FILE} ];then
@@ -34,6 +34,6 @@ if [ -f ${TMP_FILE} ];then
 fi
 
 ## Print sum of active iptables rule-lines
-echo "- Sum of active iptable rules : ${NUM_IPT_CHAIN} line"
+echo "- Sum of active iptable rules : ${NUM_IPT_RULE} line"
 
 exit 0
