@@ -3,6 +3,8 @@
 ##Description
 'iptables-rules-count.sh' is a shell script that can help you calculating the sum of active iptables rule-lines in Linux Server.
 
+iptables controls five different tables: filter, nat, mangle, raw and security. On a given call, iptables only displays or modifies one of these tables, specified by the argument to the option -t (defaulting to filter). To see the complete state of the firewall, you need to call iptables on each of the tables successively.
+
 ##Requirements
 
 - Server Linux OS uses netfilter core-firewall that facilitates Network Address Translation (NAT), packet filtering, and packet mangling.
