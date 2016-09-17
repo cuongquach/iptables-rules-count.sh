@@ -30,7 +30,79 @@ $ which iptables-rules-count
 **Ex** : calculating the sum of active iptables rule-lines in Linux.
 ```sh
 $ iptables-rules-count
-- Sum of active iptable rules : 1891 line
+++++++++++++++++++++++++++++++++++++++++++++
++ Summary information of iptables firewall +
+++++++++++++++++++++++++++++++++++++++++++++
+
+---| Sum of current iptables chains : 27   (chains)
+---| Sum of active iptable rules : 161    (rules)
+
+
++++++++++++++++++++++++++++++++++++++++
++ Table 'filter' of iptables firewall +
++++++++++++++++++++++++++++++++++++++++
+
+-- Chain INPUT : 44    (rules)
+-- Chain FORWARD : 0    (rules)
+-- Chain OUTPUT : 49    (rules)
+-- Chain ALLOWIN : 9    (rules)
+-- Chain ALLOWOUT : 1    (rules)
+-- Chain DENYIN : 1    (rules)
+-- Chain DENYOUT : 1    (rules)
+-- Chain INVALID : 10    (rules)
+-- Chain INVDROP : 1    (rules)
+-- Chain LOCALINPUT : 2    (rules)
+-- Chain LOCALOUTPUT : 2    (rules)
+-- Chain LOGDROPIN : 22    (rules)
+-- Chain LOGDROPOUT : 4    (rules)
+-- Chain acctboth : 15    (rules)
+---| Sum of amount CHAINS in table 'filter' : 14    (chains)
+---| Sum of amount RULES in table 'filter' : 161    (rules)
+
+
+++++++++++++++++++++++++++++++++++++
++ Table 'nat' of iptables firewall +
+++++++++++++++++++++++++++++++++++++
+
+-- Chain PREROUTING : 0    (rules)
+-- Chain POSTROUTING : 0    (rules)
+-- Chain OUTPUT : 0    (rules)
+---| Sum of amount CHAINS in table 'nat' : 3    (chains)
+---| Sum of amount RULES in table 'nat' : 0    (rules)
+
+
++++++++++++++++++++++++++++++++++++++++
++ Table 'mangle' of iptables firewall +
++++++++++++++++++++++++++++++++++++++++
+
+-- Chain PREROUTING : 0    (rules)
+-- Chain INPUT : 0    (rules)
+-- Chain FORWARD : 0    (rules)
+-- Chain OUTPUT : 0    (rules)
+-- Chain POSTROUTING : 0    (rules)
+---| Sum of amount CHAINS in table 'mangle' : 5    (chains)
+---| Sum of amount RULES in table 'mangle' : 0    (rules)
+
+
+++++++++++++++++++++++++++++++++++++
++ Table 'raw' of iptables firewall +
+++++++++++++++++++++++++++++++++++++
+
+-- Chain PREROUTING : 0    (rules)
+-- Chain OUTPUT : 0    (rules)
+---| Sum of amount CHAINS in table 'raw' : 2    (chains)
+---| Sum of amount RULES in table 'raw' : 0    (rules)
+
+
++++++++++++++++++++++++++++++++++++++++++
++ Table 'security' of iptables firewall +
++++++++++++++++++++++++++++++++++++++++++
+
+-- Chain INPUT : 0    (rules)
+-- Chain FORWARD : 0    (rules)
+-- Chain OUTPUT : 0    (rules)
+---| Sum of amount CHAINS in table 'security' : 3    (chains)
+---| Sum of amount RULES in table 'security' : 0    (rules)
 ```
 
 ##Author
